@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+:root {
+  --main-color: #4aa19b;
+  --second-color: #064b66;
+  --alt-color: #0a78a3;
+}
+
+.text-color {
+  color: var(--main-color);
+}
+
+section {
+  background-color: var(--second-color);
+}
+
+/* & first section */
+header {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.418) 0% 40%),
+    url(../img/bckg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header div h2 {
+  color: var(--main-color);
+  font-size: 90px;
+  line-height: 72px;
+  font-weight: 500;
+}
+header div p {
+  color: var(--main-color);
+  font-size: 30px;
+}
+
+header div.menu {
+  height: 100%;
+  width: 0;
+  background-color: #344d67;
+  overflow: hidden;
+}
+
+header div.menu a,
+header div.menu i {
+  color: white;
+  transition: color 400ms;
+}
+
+header div.menu a:hover,
+header div.menu i:hover {
+  color: var(--main-color);
+  transition: all 400ms;
+}
+
+/* & second section  */
+div.open {
+  background-color: var(--second-color);
+  transition: background-color 400ms;
+  position: fixed;
+}
+
+div.open:hover {
+  background-color: #344d67;
+}
+
+div.open-tab {
+  border: 1px solid var(--main-color);
+  font-weight: 700;
+}
+
+div.tab {
+  background-color: var(--main-color);
+  display: none;
+}
+
+div.tab.special {
+  display: block;
+}
+
+/* & count down section  */
+#count-down {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.418) 0% 40%),
+    url(../img/bckg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.count {
+  background-color: var(--second-color);
+  border: 5px solid var(--second-color);
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  border: 1px solid #fff;
+}
+
+.count span {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+/* & contact section */
+.social {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  margin-inline: 10px;
+  transition: background-color 400ms;
+}
+
+.social:hover {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.social:hover i {
+  color: var(--second-color);
+}
+
+button.btn {
+  transition: background-color 400ms;
+  background-color: var(--main-color);
+}
+
+button:hover {
+  background-color: #0a78a3 !important;
+}
