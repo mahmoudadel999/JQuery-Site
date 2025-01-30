@@ -6,9 +6,9 @@
 }
 
 :root {
-  --main-color: #4aa19b;
-  --second-color: #064b66;
-  --alt-color: #0a78a3;
+  --main-color: #D62E33;
+  --second-color: rgba(206, 39, 45, 0.378);
+  --text-color: #fff;
 }
 
 .text-color {
@@ -22,27 +22,27 @@ section {
 /* & first section */
 header {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.418) 0% 40%),
+  background-image: linear-gradient(to right, #c71b219b, #c71b219b),
     url(../img/bckg.jpg);
   background-position: center;
   background-size: cover;
 }
 
 header div h2 {
-  color: var(--main-color);
+  color: var(--text-color);
   font-size: 90px;
   line-height: 72px;
   font-weight: 500;
 }
 header div p {
-  color: var(--main-color);
+  color: var(--text-color);
   font-size: 30px;
 }
 
 header div.menu {
   height: 100%;
   width: 0;
-  background-color: #344d67;
+  background-color: #D62E33;
   overflow: hidden;
 }
 
@@ -59,30 +59,37 @@ header div.menu i:hover {
 }
 
 /* & second section  */
-div.open {
+#singers{
+  background-color: #fdfbf8;
+}
+
+.actor div.open {
   background-color: var(--second-color);
   transition: background-color 400ms;
   position: fixed;
 }
 
-div.open:hover {
-  background-color: #344d67;
+.actor div.open:hover {
+  background-color: var(--second-color);
 }
 
-div.open-tab {
-  border: 1px solid var(--main-color);
+.actor div.open-tab {
+  border: 1px solid var(--second-color);
   font-weight: 700;
 }
 
 div.tab {
-  background-color: var(--main-color);
+  background-color: var(--second-color);
   display: none;
 }
 
-div.tab.special {
+.singer div.tab.special {
   display: block;
 }
 
+.duration{
+  background-color: #e68285;
+}
 /* & count down section  */
 #count-down {
   background-image: linear-gradient(rgba(0, 0, 0, 0.418) 0% 40%),
@@ -93,12 +100,11 @@ div.tab.special {
 
 .count {
   background-color: var(--second-color);
-  border: 5px solid var(--second-color);
   display: flex;
   justify-content: center;
-  width: 200px;
+  width: 180px;
   height: 150px;
-  border: 1px solid #fff;
+  border: 1px solid var(--second-color);
 }
 
 .count span {
@@ -107,17 +113,19 @@ div.tab.special {
 }
 
 /* & contact section */
+
+
 .social {
   width: 40px;
   height: 40px;
-  border: 1px solid white;
   margin-inline: 10px;
+  border: 1px solid var(--second-color);
   transition: background-color 400ms;
 }
 
 .social:hover {
-  background-color: var(--main-color);
-  border: 1px solid var(--main-color);
+  background-color: var(--second-color);
+  border: 1px solid var(--second-color);
 }
 
 .social:hover i {
@@ -125,10 +133,13 @@ div.tab.special {
 }
 
 button.btn {
+  color: var(--main-color);
   transition: background-color 400ms;
-  background-color: var(--main-color);
+  border: 1px solid var(--second-color);
 }
 
-button:hover {
-  background-color: #0a78a3 !important;
+button.btn:hover {
+  color: var(--text-color);
+  background-color: var(--second-color);
+  border: 1px solid var(--second-color);
 }
